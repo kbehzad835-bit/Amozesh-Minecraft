@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+}
+
+.header {
+    height: 65px;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-button {
+    background: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 48px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menu-button:active {
+    transform: scale(0.95);
+}
+
+.menu {
+    position: absolute;
+    top: 58px;
+    right: 15px;
+
+    width: 230px;
+
+    background: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    padding: 8px;
+
+    display: none;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+    z-index: 1000;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 13px;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: #333;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    background: #3c8527;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
